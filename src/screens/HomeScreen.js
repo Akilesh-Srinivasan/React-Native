@@ -8,36 +8,36 @@ const HomeScreen = (props) => {
       <Text style={styles.text}>Hi!1</Text>
       <Button
         title="Go to Components Demo"
-        onPress={() => props.navigation.navigate('Components')} />
-
-      <Button
-        title="Go to lists"
-        onPress={() => props.navigation.navigate('List')} />
-
-      <Button
-        title="Go to image screen"
-        // props.navigation.navigate will take you to that particular component
-        onPress={() => props.navigation.navigate('ImageScreen')} />
+        onPress={() => props.navigation.navigate("Components")}
+      />
 
       <Button
         title="Go to counter screen"
-        onPress={() => props.navigation.navigate('CounterScreen')} />
+        onPress={() => props.navigation.navigate("CounterScreen")}
+      />
 
       <Button
         title="Go to colors screen"
-        onPress={() => props.navigation.navigate('ColorsScreen')} />
+        onPress={() => props.navigation.navigate("ColorsScreen")}
+      />
 
       <Button
-        title="Go to colors screen"
-        onPress={() => props.navigation.navigate('SquareScreen')} />
+        title="Go to squares screen"
+        onPress={() => props.navigation.navigate("SquareScreen")}
+      />
+
+      <Button
+        title="Go to text screen"
+        onPress={() => props.navigation.navigate("TextScreen")}
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
-  }
+    fontSize: 30,
+  },
 });
 
 export default HomeScreen;
